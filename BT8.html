@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT8</title>
+</head>
+<body>
+<input type="button"  value="Play!!!" onclick="play();">
+    <script>
+    function play() {
+        let n = parseInt(prompt('Nhap khoang so tu 0 den n'));
+        let a = Math.floor((Math.random()*n)+1);
+        let b = parseInt(prompt('Nhap so ban chon'));
+        let count = 0;
+        while (count<=2){
+            if (b === a) {
+                alert('Chuc mung, ban da chien thang. Ket qua la ' +a);
+                break;
+            }
+            if (b < a) {
+                alert('Nho hon roi, chon lai di');
+                b=parseInt(prompt('Nhap so ban chon'));
+                count++;
+            }
+            if (b > a) {
+                alert('Lon hon roi, chon lai di');
+                b=parseInt(prompt('Nhap so ban chon'));
+                count++;
+            }
+        }
+        if (count > 2) {
+            alert('Da qua so lan nhap, ban da thua!');
+        }
+    }
+</script>
+</body>
+</html>

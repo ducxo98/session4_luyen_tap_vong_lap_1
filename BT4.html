@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT4</title>
+</head>
+<body>
+<script>
+    let x = 0;
+    let y = 1;
+    while (true){
+        x = x+y;
+        y = y+x;
+        if(x%5===0){
+            document.write(x);
+            break;
+        }else if(y%5===0){
+            document.write("so dau tien la " + y);
+            break;
+        }
+    }
+</script>
+
+</body>
+</html>

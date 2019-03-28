@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT2</title>
+</head>
+<body>
+<script>
+    // while (true) {
+    //     let T = parseInt(prompt("enter the temperature:"));
+    //     if (T > 100) {
+    //         T = parseInt(prompt("reduce the temperature:"))
+    //     }
+    //     if (T < 20) {
+    //         T = parseInt(prompt("increased temperature"))
+    //     } else {
+    //         alert("suitable temperature")
+    //
+    //     }
+    // }
+    let tem=parseFloat(prompt('Nhap nhiet do hien tai'));
+    if (20 <= tem && tem <= 100) {
+        alert('Nhiet do hop ly');
+    }
+    while (tem > 100) {
+        alert('Hay giam nhiet do.');
+        tem=parseFloat(prompt('Nhap nhiet do hien tai'));
+    }
+    while (tem < 20) {
+        alert('Hay tang nhiet do');
+        tem = parseFloat(prompt('Nhap nhiet do hien tai'));
+    }
+</script>
+</body>
+</html>
